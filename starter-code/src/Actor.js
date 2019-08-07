@@ -7,7 +7,8 @@ function Actor (props) {
         <div className="actor">
             <img src={props.src} width="200" alt="actor" />
             <h1>{props.name}</h1>
-            <span>{props.rating}</span>
+            <span>Rating: <strong>{props.rating}</strong></span>
+            <button onClick={()=>{props.remove(props.index)}}>Delete</button>
         </div>
     );
 }

@@ -1,5 +1,7 @@
 body, html{
   background: #f1f1e9;
+  display: flex;
+  justify-content: center;
 }
 .App {
   text-align: center;
@@ -19,6 +21,13 @@ body, html{
 
 .App-title {
   font-size: 1.5em;
+}
+
+.Actor-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 

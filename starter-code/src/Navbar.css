@@ -1,0 +1,29 @@
+.navbar{
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+    background: #2d2d2d;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar li{
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: yellow;
+}
+
+.navbar a:hover{
+    color: greenyellow;
+}
