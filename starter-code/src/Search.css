@@ -3,3 +3,12 @@
     margin: 1rem;
     min-width: 350px;
 }
+
+.Search button{
+    border: none;
+    background: #2d2d2d;
+    color: white;
+    border-radius: 3px;
+    margin: .4rem;
+    padding: .5rem;
+}

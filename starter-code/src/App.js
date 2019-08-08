@@ -34,12 +34,18 @@ class App extends Component {
     this.setState({actors: actorsCopy});
   }
 
-  // Setting up sort by name
+
+  // Setting up sort by name ( Could not get this to work)
   sortByName = (index) => {
-    let actorsSorting = [...this.state.actors];
-    actorsSorting.sort(function(a, b) {
-      
+    debugger
+    let actorsAlphabetical = [...this.state.actors]
+    let actorsName = actorsAlphabetical[index].name
+    debugger
+    actorsAlphabetical.sort(function compare(a, b) {
+     return a-b  
     })
+
+    this.setState({actors: actorsAlphabetical});
   }
   
   render() {
@@ -63,6 +69,7 @@ class App extends Component {
           <div>
             <div className="Search">
                 <input onChange={this.search} placeholder="Search your favorite actor" type="text"/>
+                <button onClick={this.sortByName}>Sort by Name</button>
             </div>
             <div className="Actor-wrapper">
               {eachActor}
